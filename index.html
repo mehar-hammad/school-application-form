@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>School Admission Application Form</h2>
+
+    <form id="applicationForm">
+        <label>Student Name</label>
+        <input type="text" id="studentName">
+        <span class="error" id="nameError"></span>
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob">
+        <span class="error" id="dobError"></span>
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+        <span class="error" id="genderError"></span>
+
+        <label>Class Applying For</label>
+        <select id="class">
+            <option value="">Select Class</option>
+            <option>Nursery</option>
+            <option>KG</option>
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+            <option>5th</option>
+        </select>
+        <span class="error" id="classError"></span>
+
+        <label>Parent / Guardian Name</label>
+        <input type="text" id="parentName">
+        <span class="error" id="parentError"></span>
+
+        <label>Contact Number</label>
+        <input type="text" id="contact">
+        <span class="error" id="contactError"></span>
+
+        <label>Address</label>
+        <textarea id="address" rows="3"></textarea>
+        <span class="error" id="addressError"></span>
+
+        <button type="submit" class="btn">Submit Application</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
